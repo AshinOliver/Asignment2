@@ -1,0 +1,28 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 250,
+    "data": {"url": "https://raw.githubusercontent.com/AshinOliver/VIS2/main/bar_VIS2.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "state", "type": "nominal","title": "State"},
+      "tooltip": [
+              {"field": "death", "type": "quantitative"},
+              {"field": "state", "type": "ordinal"}
+            ],
+      "y": {"field": "death", "type": "quantitative", "title": "Death"},
+  "color": {
+          "value": "grey",
+          "condition": {
+            "test": {
+              "field": "state",
+              "oneOf": ["New York", "Vermont"]
+            },
+            "field": "state",
+            "type": "nominal",
+            "scale": {
+              "domain": ["New York", "Vermont"],
+              "range": ["#cc4c02", "#0570b0"]
+   }
+    }
+  }}}

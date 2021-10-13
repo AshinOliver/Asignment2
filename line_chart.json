@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 200,
+  "data": {"url": "https://raw.githubusercontent.com/AshinOliver/VIS2/main/line_chart_vis2.csv"},
+  "params": [
+ {
+ "name": "State_selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+"Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Iowa","Idaho","Illinois","Indiana","Kansas","Kentucky","Louisiana","Massachusetts","Maryland","Maine","Michigan","Minnesota","Missouri","Mississippi","Montana","North Carolina","North Dakota","Nebraska","New hampshire","New jersey","New mexico","Nevada","New York","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode island","South carolina","South dakota","Tennessee","Texas","Utah","Virginia","Vermont","Washington","Wisconsin","West Virginia","Wyoming"
+ ],
+ "labels":[
+ "Show All",
+"Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Iowa","Idaho","Illinois","Indiana","Kansas","Kentucky","Louisiana","Massachusetts","Maryland","Maine","Michigan","Minnesota","Missouri","Mississippi","Montana","North Carolina","North Dakota","Nebraska","New hampshire","New jersey","New mexico","Nevada","New York","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode island","South carolina","South dakota","Tennessee","Texas","Utah","Virginia","Vermont","Washington","Wisconsin","West Virginia","Wyoming"
+ ],
+ "name": "State_selection: "
+ }
+ }
+ ],
+     "transform": [
+      {"filter": "State_selection == null || datum.state == State_selection"}],
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": false,
+      "fill": "white"
+    }
+  },
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+      "tooltip": [
+            {"field": "positive", "type": "quantitative"},
+            {"field": "date", "type": "temporal"},
+            {"field": "state", "type": "ordinal"}
+          ],
+    "y": {"field": "positive", "type": "quantitative"},
+    "color": {"field": "state", "type": "nominal","legend": {"columns": 2}}
+     
+  }
+}

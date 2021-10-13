@@ -1,0 +1,17 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 300,
+    "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+    "data": {"url": "https://raw.githubusercontent.com/AshinOliver/VIS2/main/scatter%20plot_vis2.csv"},
+    "mark": "point",
+    "encoding": {
+      "x": {"field": "positive", "type": "quantitative"},
+      "y": {"field": "death", "type": "quantitative"},
+    
+    "tooltip": [
+  {"field": "state", "type": "nominal", "title": "State"},
+  {"field": "positive", "type": "quantitative"},
+  {"field": "death", "type": "quantitative"}]}
+  }
+  
