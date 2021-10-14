@@ -10,11 +10,11 @@
  "input": "select",
  "options": [
  null,
-"Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Iowa","Idaho","Illinois","Indiana","Kansas","Kentucky","Louisiana","Massachusetts","Maryland","Maine","Michigan","Minnesota","Missouri","Mississippi","Montana","North Carolina","North Dakota","Nebraska","New hampshire","New jersey","New mexico","Nevada","New York","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode island","South carolina","South dakota","Tennessee","Texas","Utah","Virginia","Vermont","Washington","Wisconsin","West Virginia","Wyoming"
+"Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","Delaware","Florida","Georgia"
  ],
  "labels":[
  "Show All",
-"Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Iowa","Idaho","Illinois","Indiana","Kansas","Kentucky","Louisiana","Massachusetts","Maryland","Maine","Michigan","Minnesota","Missouri","Mississippi","Montana","North Carolina","North Dakota","Nebraska","New hampshire","New jersey","New mexico","Nevada","New York","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode island","South carolina","South dakota","Tennessee","Texas","Utah","Virginia","Vermont","Washington","Wisconsin","West Virginia","Wyoming"
+"Alaska","Alabama","Arkansas","Arizona","California","Colorado","Connecticut","Delaware","Florida","Georgia"
  ],
  "name": "State_selection: "
  }
@@ -37,7 +37,7 @@
             {"field": "state", "type": "ordinal"}
           ],
     "y": {"field": "positive", "type": "quantitative"},
-    "color": {"field": "state", "type": "nominal","legend": {"columns": 2}}
+    "color": {"field": "state", "type": "nominal"}
      
   }
 }

@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
+    "width": 550,
     "height": 400,
     "projection": {"type": "albersUsa"},
     
@@ -43,4 +43,4 @@
             "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]}},
 "tooltip": [
 {"field": "properties.NAME", "type": "nominal", "title": "State"},
-{"field": "positive", "type": "quantitative"}]}}]}
+{"field": "positive", "type": "quantitative", "title": "Positive"}]}}]}
